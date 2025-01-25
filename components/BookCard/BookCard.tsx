@@ -4,6 +4,7 @@ import BookCover from "../BookCover/BookCover";
 import { cn } from "@/lib/utils";
 import calendar from "../../public/icons/calendar.svg";
 import Image from "next/image";
+import { Button } from "../ui/button";
 
 const BookCard = ({
   title,
@@ -27,7 +28,6 @@ const BookCard = ({
         <BookCover
           coverUrl={coverUrl}
           coverColor={coverColor}
-          variant={isLoanedBook ? "small" : "regular"}
         />
         <div className={cn("mt-4", !isLoanedBook && "xs:max-w-40 max-w-28")}>
           <p className="book-title">{title}</p>
@@ -37,8 +37,9 @@ const BookCard = ({
           <div className="mt-3 w-full">
             <div className="book-loaned">
               <Image src={calendar} alt="calendar" width={16} height={16} />
-              <p>Loaned</p>
+              <p className="text-light-100">12 Days to return</p>
             </div>
+            <Button className="book-btn">Download receipt</Button>
           </div>
         )}
       </Link>
