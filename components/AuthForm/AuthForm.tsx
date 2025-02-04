@@ -3,6 +3,7 @@ import React from "react";
 import {
   DefaultValues,
   FieldValues,
+  Path,
   SubmitHandler,
   UseFormReturn,
 } from "react-hook-form";
