@@ -41,7 +41,7 @@ export const navigationLinks = [
   ];
   
   export const FIELD_NAMES = {
-    fullname: "Full name",
+    fullName: "Full name",
     email: "Email",
     universityId: "University ID Number",
     password: "Password",
@@ -49,7 +49,7 @@ export const navigationLinks = [
   };
   
   export const FIELD_TYPES = {
-    fullname: "text",
+    fullName: "text",
     email: "email",
     universityId: "number",
     password: "password",
@@ -64,7 +64,6 @@ export const navigationLinks = [
       rating: 4.6,
       totalCopies: 20,
       availableCopies: 10,
-      isLoanedBook: true,
       description:
         "A dazzling novel about all the choices that go into a life well lived, The Midnight Library tells the story of Nora Seed as she finds herself between life and death.",
       coverColor: "#1c1f40",

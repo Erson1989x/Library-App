@@ -39,7 +39,7 @@ const BookCard = ({
               <Image src={calendar} alt="calendar" width={16} height={16} />
               <p className="text-light-100">12 Days to return</p>
             </div>
-            <Button className="book-btn">Download receipt</Button>
+            <Button className="book-btn text-primary-admin">Download receipt</Button>
           </div>
         )}
       </Link>
