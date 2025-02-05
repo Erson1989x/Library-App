@@ -15,5 +15,5 @@ const imageKit = new ImageKit({
 });
 
 export async function GET() {
-    return NextResponse.json(imageKit.getAuthentificationParameters());
+  return NextResponse.json(imageKit.getAuthentificationParameters());
 }

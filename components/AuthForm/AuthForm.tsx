@@ -22,7 +22,7 @@ import {
 } from "../ui/form";
 import { Input } from "../ui/input";
 import Link from "next/link";
-import { FIELD_NAMES, FIELD_TYPES } from "@/constants/index"
+import { FIELD_NAMES, FIELD_TYPES } from "@/constants/index";
 import ImageUpload from "../ImageUpload/ImageUpload";
 
 interface Props<T extends FieldValues> {

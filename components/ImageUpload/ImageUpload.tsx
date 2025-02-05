@@ -30,7 +30,11 @@ const authenticator = async () => {
     throw new Error(`Failed to authenticate: ${message}`);
   }
 };
-const ImageUpload = ({onFileChange}: {onFileChange: (filePath: string) => void}) => {
+const ImageUpload = ({
+  onFileChange,
+}: {
+  onFileChange: (filePath: string) => void;
+}) => {
   const IKUploadRef = useRef(null);
   const [file, setFile] = useState<{ filePath: string } | null>(null);
 
@@ -38,8 +42,9 @@ const ImageUpload = ({onFileChange}: {onFileChange: (filePath: string) => void})
     console.log("error");
     toast({
       title: "Image upload failed",
-      description: `Your image cannot be uploaded please try again`, variant: "destructive",
-    })
+      description: `Your image cannot be uploaded please try again`,
+      variant: "destructive",
+    });
   };
 
   const onSuccess = (res: any) => {
@@ -48,7 +53,7 @@ const ImageUpload = ({onFileChange}: {onFileChange: (filePath: string) => void})
     toast({
       title: "Image uploaded successfully",
       description: `${res.filePath} uploaded successfully`,
-    })
+    });
   };
   return (
     <ImageKitProvider

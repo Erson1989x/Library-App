@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/toaster";
 
 const ibmPlexSans = localFont({
-
- src: [
+  src: [
     {
       path: "./fonts/IBMPlexSans-Regular.ttf",
       weight: "400",
